@@ -1,0 +1,20 @@
+{
+  "name": "mikro-orm-alias-nested-where",
+  "private": true,
+  "type": "module",
+  "description": "Reproduction: QueryBuilder types reject alias-prefixed keys inside nested $and/$or groups",
+  "scripts": {
+    "check": "tsc --noEmit",
+    "sql": "tsx src/runtime.ts"
+  },
+  "dependencies": {
+    "@mikro-orm/core": "7.1.11",
+    "@mikro-orm/decorators": "7.1.11",
+    "@mikro-orm/postgresql": "7.1.11",
+    "reflect-metadata": "^0.2.2"
+  },
+  "devDependencies": {
+    "tsx": "^4.23.5",
+    "typescript": "7.0.2"
+  }
+}
