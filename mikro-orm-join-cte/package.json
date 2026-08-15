@@ -1,0 +1,22 @@
+{
+  "name": "mikro-orm-join-cte",
+  "private": true,
+  "type": "module",
+  "description": "Reproduction: join() has no way to reference a CTE by name — raw table references are always wrapped in parentheses",
+  "scripts": {
+    "check": "tsc --noEmit",
+    "sql": "tsx src/repro.ts",
+    "verify": "tsx src/verify.ts"
+  },
+  "dependencies": {
+    "@mikro-orm/core": "7.1.11",
+    "@mikro-orm/decorators": "7.1.11",
+    "@mikro-orm/postgresql": "7.1.11",
+    "reflect-metadata": "^0.2.2"
+  },
+  "devDependencies": {
+    "@types/node": "^26.1.2",
+    "tsx": "^4.23.5",
+    "typescript": "7.0.2"
+  }
+}
