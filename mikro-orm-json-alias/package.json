@@ -1,0 +1,20 @@
+{
+  "name": "mikro-orm-json-alias",
+  "private": true,
+  "type": "module",
+  "description": "Reproduction: where condition on a JSON property of a joined entity ignores the join alias",
+  "scripts": {
+    "check": "tsc --noEmit",
+    "sql": "tsx src/repro.ts"
+  },
+  "dependencies": {
+    "@mikro-orm/core": "7.1.13",
+    "@mikro-orm/decorators": "7.1.13",
+    "@mikro-orm/postgresql": "7.1.13",
+    "reflect-metadata": "^0.2.2"
+  },
+  "devDependencies": {
+    "tsx": "^4.23.5",
+    "typescript": "7.0.2"
+  }
+}
