@@ -1,0 +1,22 @@
+{
+  "name": "mikro-orm-count-distinct",
+  "private": true,
+  "type": "module",
+  "description": "Reproduction: getCount() ignores distinct()/distinctOn() already set on the query",
+  "scripts": {
+    "check": "tsc --noEmit",
+    "sql": "tsx src/repro.ts",
+    "verify": "tsx src/verify.ts"
+  },
+  "dependencies": {
+    "@mikro-orm/core": "7.2.1",
+    "@mikro-orm/decorators": "7.2.1",
+    "@mikro-orm/postgresql": "7.2.1",
+    "reflect-metadata": "^0.2.2"
+  },
+  "devDependencies": {
+    "@types/node": "^26.1.2",
+    "tsx": "^4.23.5",
+    "typescript": "7.0.2"
+  }
+}
