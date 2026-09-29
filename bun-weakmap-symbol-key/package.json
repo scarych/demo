@@ -1,0 +1,15 @@
+{
+  "name": "bun-weakmap-symbol-key",
+  "private": true,
+  "type": "module",
+  "description": "Reproduction: Bun collects a Symbol that is still reachable as a property key (WeakMap entries removed, WeakRefs cleared)",
+  "scripts": {
+    "repro": "bun repro.mjs",
+    "repro:node": "node --expose-gc repro.mjs",
+    "mikro-orm": "bun mikro-orm.mjs",
+    "mikro-orm:node": "node --expose-gc mikro-orm.mjs"
+  },
+  "dependencies": {
+    "@mikro-orm/postgresql": "7.2.2"
+  }
+}
